@@ -34,3 +34,22 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 日本説明
+
+### URICO（ウリコ）
+関西全域246市区町村対応のマンション売却マッチングサービス。
+
+### セットアップ方法
+
+```bash
+npm install
+npm run dev
+```
+
+### 公開（Vercel）
+1. このリポジトリをGitHubにpush
+2. Vercelで新規プロジェクト作成し、GitHubリポジトリを連携
+3. デプロイボタンを押すだけで公開！
+
+---
