@@ -72,3 +72,53 @@ body {
   margin-bottom: 0.25rem;
   break-inside: avoid;
 }
+
+/* ナビゲーションメニュー視認性改善 */
+.header-nav-bg { background-color: #dc2626 !important; }
+.header-nav-link { color: #fff !important; font-weight: 500 !important; transition: color 0.2s; }
+.header-nav-link:hover { color: #fca5a5 !important; }
+.header-nav-link.active { text-decoration: underline; }
+
+/* ハンバーガーメニュー用 */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 60;
+}
+.hamburger span {
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+  .header-nav-pc { display: none !important; }
+  .header-nav-mobile { display: block !important; }
+}
+.header-nav-mobile {
+  display: none;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 100vw;
+  background: #dc2626;
+  z-index: 50;
+  padding: 1.5rem 0;
+}
+.header-nav-mobile a {
+  display: block;
+  color: #fff;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid #fca5a5;
+}
+.header-nav-mobile a:last-child { border-bottom: none; }
+.header-nav-mobile a:hover { color: #fca5a5; background: rgba(255,255,255,0.05); }
